@@ -27,7 +27,7 @@ export default function Home() {
           <a href="#contact" className="btn primary-btn">
             Contact Me
           </a>
-          <div className="social-links">
+          <div className="hero-links">
             <a
               href="https://github.com/YOUR_USERNAME"
               target="_blank"

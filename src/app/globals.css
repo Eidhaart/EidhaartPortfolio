@@ -7,11 +7,12 @@ html,
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  width: 100%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--color-bg);
   color: var(--color-text);
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 /* =======================
@@ -77,7 +78,7 @@ body {
 
 .eidhaart-name {
   font-family: "AmazOOSTROV", sans-serif;
-  color: var(--color-accent);
+  color: #bd2626;
   letter-spacing: 0.05em;
   font-size: 4rem;
   margin: 10px;
@@ -160,17 +161,29 @@ body {
 
 .hero-links-split {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 100%;
-  flex-wrap: wrap;
+  justify-content: space-between;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
-.social-links {
+.hero-links-split .primary-btn {
+  flex: 0 1 auto;
+}
+
+.hero-links {
   display: flex;
-  gap: 1rem;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 100%;
+  margin-top: 2rem;
+}
+
+.hero-links .btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  white-space: nowrap;
 }
 
 .about-section p {
@@ -182,7 +195,8 @@ body {
 }
 .about-section h2 {
   font-family: "AmazOOSTROVFine";
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  color: #bd2626;
 }
 
 /* =======================
@@ -256,18 +270,31 @@ p {
   box-shadow: 0 4px 15px rgba(255, 255, 255, 0.05);
 }
 
+.project-card p {
+  margin-bottom: 2rem;
+}
+
 /* =======================
    🛠️ Skills
 ======================= */
 
 .skills-section h2 {
   font-family: "AmazOOSTROVFine";
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+  color: #bd2626;
 }
 .projects h2 {
   font-family: "AmazOOSTROVFine";
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+  color: #bd2626;
 }
 .contact h2 {
   font-family: "AmazOOSTROVFine";
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+  color: #bd2626;
 }
 
 .skills-section {
@@ -277,11 +304,10 @@ p {
 
 .skills-grid {
   display: flex;
-  justify-content: space-between; /* 👈 THIS spreads the columns edge to edge */
+  justify-content: space-between;
   align-items: flex-start;
-  flex-wrap: wrap;
   gap: 2rem;
-  width: 100%;
+  flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -304,21 +330,21 @@ p {
 }
 
 .skill-category ul {
-  list-style: none;
-  padding: 0;
-  width: 100%; /* Makes sure pills fill the same width */
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  align-items: flex-start; /* Aligns the pill list to the left */
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .skill-icon {
   font-size: 1.7rem;
   margin-right: 0.5rem;
-  color: var(--color-accent);
+
   min-width: 1.2rem;
   text-align: center;
+  color: #bd2626;
 }
 
 /* Keep this from earlier if you haven't added it yet */
@@ -381,61 +407,49 @@ p {
     Footer
 ======================= */
 .site-footer {
-  width: 100vw; /* FORCE full viewport width */
-  background-color: rgba(255, 255, 255, 0.027);
-  color: var(--color-bg);
+  background-color: var(--color-bg);
+  color: var(--color-text);
   padding: 2rem 1rem;
-  margin-top: 4rem;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  margin-bottom: -30px;
+  border-top: 1px solid var(--color-border);
+  width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 .footer-content {
-  max-width: 1200px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-items: center; /* ← CRITICAL: aligns both text and image on Y axis */
+  align-items: center;
   flex-wrap: wrap;
-  height: 100%;
-}
-
-.footer-logo {
-  height: 56px;
-  width: auto;
-  opacity: 0.9;
-  display: block;
-  transform: translateY(-2px); /* 👈 adjust this until it's visually centered */
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .footer-left {
   font-size: 0.9rem;
-  color: var(--color-text);
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
+  flex: 1;
 }
 
 .footer-right {
+  flex: 0 0 auto;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  height: 100%; /* Ensure it stretches with the footer */
+}
+
+.footer-logo {
+  height: 36px;
+  width: auto;
+  opacity: 0.9;
+  display: block;
 }
 
 /* =======================
    📱 Responsive
 ======================= */
 @media (max-width: 768px) {
-  .hero-links-split {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
   .social-links {
     justify-content: flex-start;
   }
@@ -536,6 +550,27 @@ p {
   }
 }
 
+@media (max-width: 500px) {
+  .intro-line {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+  }
+
+  .eidhaart-name {
+    font-size: 2rem;
+    margin: 10px;
+  }
+
+  .intro-subtitle {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: white;
+    margin-top: 0.5rem;
+  }
+}
+
 @media (max-width: 768px) {
   .skills-grid {
     justify-content: center;
@@ -565,6 +600,98 @@ p {
     text-align: center;
   }
   .contact h2 {
+    text-align: center;
+  }
+
+  .about-section h2 {
+    text-align: center;
+  }
+
+  .skill-pill {
+    font-size: 0.7rem;
+  }
+  .skill-icon {
+    font-size: 1rem;
+  }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .skill-category {
+    align-items: center;
+    text-align: center;
+  }
+
+  .skill-category ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 0.75rem;
+    justify-items: center;
+  }
+
+  .skill-category li {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-left {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-right {
+    justify-content: center;
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  .footer-logo {
+    height: 28px;
+  }
+
+  .hero-links-split {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    width: 90%;
+  }
+
+  .hero-links-split a {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+
+  .hero-links {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    width: 90%;
+  }
+
+  .hero-links .btn {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+
+  .hero-links-split .btn {
+    width: 100%;
     text-align: center;
   }
 }

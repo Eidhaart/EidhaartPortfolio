@@ -3,10 +3,8 @@ export default function Footer() {
     <footer className="site-footer">
       <div className="footer-content">
         <div className="footer-left">
-          <p>
-            &copy; {new Date().getFullYear()} Marcin Świeczkowski | Built with
-            Next.js. Designed with grimdark love.
-          </p>
+          <p>&copy; 2025 Marcin Świeczkowski | Built with Next.js</p>
+          <p>Designed with grimdark love.</p>
         </div>
         <div className="footer-right">
           <img

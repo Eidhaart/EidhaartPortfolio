@@ -30,6 +30,17 @@ body {
   --font-hero: "Orbitron", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+[data-theme="light"] {
+  --color-bg: #f4f4f4;
+  --color-text: #1a1a1a;
+  --color-border: #ccc;
+  --color-muted: #e0e0e0;
+  --color-accent: #c62828; /* bold red */
+  --color-accent-hover: #b71c1c; /* darker red */
+  --color-card-bg: #ffffff;
+  --color-btn-text: #ffffff;
+}
+
 @font-face {
   font-family: "AmazOOSTROV";
   src: url("/fonts/AmazOOSTROVv.2.ttf") format("truetype");
@@ -72,7 +83,7 @@ body {
 .intro-line {
   font-size: 2.5rem;
   font-weight: 700;
-  color: white;
+  color: var(--color-text);
   margin: 0;
 }
 
@@ -87,7 +98,7 @@ body {
 .intro-subtitle {
   font-size: 1.8rem;
   font-weight: 700;
-  color: white;
+  color: var(--color-text);
   margin-top: 0.5rem;
 }
 
@@ -114,20 +125,12 @@ body {
   min-width: 280px;
 }
 
-.hero-image-wrapper {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 280px;
-}
-
-.hero-image {
-  width: 240px;
-  height: auto;
-  border-radius: 20px;
+.eidhaart-logo {
+  height: 30rem;
+  width: auto;
   object-fit: contain;
-  transition: all 0.3s ease-in-out;
+  display: block;
+  transition: all 0.3s ease;
 }
 
 .header {
@@ -349,7 +352,7 @@ p {
 
 /* Keep this from earlier if you haven't added it yet */
 .skill-pill {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: var(--color-card-bg);
   padding: 0.4rem 0.8rem;
   border-radius: 5px;
   font-size: 1.2rem;
@@ -440,7 +443,7 @@ p {
 }
 
 .footer-logo {
-  height: 36px;
+  height: 65px;
   width: auto;
   opacity: 0.9;
   display: block;
@@ -540,7 +543,7 @@ p {
   }
 
   .footer-logo {
-    height: 32px;
+    height: 65px;
   }
 
   .footer-content {
@@ -554,7 +557,7 @@ p {
   .intro-line {
     font-size: 1.8rem;
     font-weight: 700;
-    color: white;
+    color: var(--color-text);
     margin: 0;
   }
 
@@ -566,7 +569,7 @@ p {
   .intro-subtitle {
     font-size: 1.4rem;
     font-weight: 700;
-    color: white;
+    color: var(--color-text);
     margin-top: 0.5rem;
   }
 }
@@ -658,7 +661,7 @@ p {
   }
 
   .footer-logo {
-    height: 28px;
+    height: 45px;
   }
 
   .hero-links-split {
@@ -694,4 +697,54 @@ p {
     width: 100%;
     text-align: center;
   }
+
+  .eidhaart-logo {
+    height: 10rem;
+    width: auto;
+    object-fit: contain;
+    display: block;
+    transition: all 0.3s ease;
+  }
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 999;
+  transition: background 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.theme-toggle .icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.4s ease, opacity 0.3s ease;
+}
+
+.theme-toggle .sun {
+  transform: rotate(0deg);
+}
+
+.theme-toggle .moon {
+  transform: rotate(360deg);
+}
+
+.theme-toggle svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--color-text);
 }

@@ -11,8 +11,9 @@ export default function Navbar() {
       <div className="hero-image-wrapper">
         <img
           src="/images/eidhaart-white.png"
-          alt="Eidhaart logotype"
-          className="hero-image"
+          alt="Eidhaart logo"
+          className="eidhaart-logo"
+          id="themeLogo"
         />
       </div>
     </nav>

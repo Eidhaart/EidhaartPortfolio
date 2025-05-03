@@ -22,12 +22,12 @@ export const metadata = {
     description:
       "Explore Marcin’s clean, modern dev work infused with personality and tactical flair.",
     url: "https://www.eidhaart.com",
-    siteName: "Marcin.dev",
+    siteName: "Eidhaart",
     images: [
       {
         url: "/images/eidhaart-red.png",
-        width: 1042,
-        height: 479,
+        width: 521,
+        height: 237,
         alt: "Marcin's Portfolio Preview",
       },
     ],

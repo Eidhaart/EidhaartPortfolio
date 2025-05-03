@@ -3,7 +3,7 @@ export default function Navbar() {
     <nav className="navbar container hero-header">
       <div className="intro-block">
         <p className="intro-line">
-          I'm <span className="eidhaart-name">Eidhaart</span>
+          I&lsquo;m <span className="eidhaart-name">Eidhaart</span>
         </p>
         <p className="intro-subtitle">Full-Stack Web Developer</p>
       </div>

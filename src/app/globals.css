@@ -338,6 +338,55 @@ p {
 }
 
 /* =======================
+    Footer
+======================= */
+.site-footer {
+  width: 100vw; /* FORCE full viewport width */
+  background-color: rgba(255, 255, 255, 0.027);
+  color: var(--color-bg);
+  padding: 2rem 1rem;
+  margin-top: 4rem;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* ← CRITICAL: aligns both text and image on Y axis */
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.footer-logo {
+  height: 56px;
+  width: auto;
+  opacity: 0.9;
+  display: block;
+  transform: translateY(-2px); /* 👈 adjust this until it's visually centered */
+}
+
+.footer-left {
+  font-size: 0.9rem;
+  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%; /* Ensure it stretches with the footer */
+}
+
+/* =======================
    📱 Responsive
 ======================= */
 @media (max-width: 768px) {
@@ -412,5 +461,22 @@ p {
   .hero-image {
     width: 80px; /* 60% of 240px */
     margin-top: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .footer-right {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .footer-logo {
+    height: 32px;
   }
 }

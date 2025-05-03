@@ -16,18 +16,18 @@ export const metadata = {
     "Frontend",
     "Backend",
   ],
-  metadataBase: new URL("https://eidhaart.com"),
+  metadataBase: new URL("https://www.eidhaart.com"),
   openGraph: {
     title: "Martin Świeczkowski – Web Developer Portfolio",
     description:
       "Explore Martin’s clean, modern dev work infused with personality and tactical flair.",
-    url: "https://eidhaart.com",
+    url: "https://www.eidhaart.com",
     siteName: "Martin.dev",
     images: [
       {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
+        url: "/images/eidhaart-red.png",
+        width: 1042,
+        height: 479,
         alt: "Martin's Portfolio Preview",
       },
     ],

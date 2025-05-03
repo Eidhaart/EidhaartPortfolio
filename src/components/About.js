@@ -3,7 +3,7 @@ export default function About() {
     <section id="about" className="about-section">
       <h2>About Me</h2>
       <p>
-        I&lsquo;m Martin, a versatile and dedicated web developer with a
+        I&lsquo;m Marcin, a versatile and dedicated web developer with a
         background in IT support, game-based therapy, and community
         organization. I&lsquo;m passionate about using technology and design to
         solve real-world problems and make meaningful impact.

@@ -3,7 +3,7 @@ import "./globals.css";
 export const metadata = {
   title: "Eidhaart – Web Developer",
   description:
-    "Portfolio of Martin Świeczkowski – Full-stack web developer with a passion for RPGs, Warhammer, and clean, impactful design.",
+    "Portfolio of Marcin Swieczkowski – Full-stack web developer with a passion for RPGs, Warhammer, and clean, impactful design.",
   keywords: [
     "Web Developer",
     "Next.js",
@@ -12,23 +12,23 @@ export const metadata = {
     "HTML",
     "CSS",
     "Portfolio",
-    "Martin Świeczkowski",
+    "Marcin Swieczkowski",
     "Frontend",
     "Backend",
   ],
   metadataBase: new URL("https://www.eidhaart.com"),
   openGraph: {
-    title: "Martin Świeczkowski – Web Developer Portfolio",
+    title: "Marcin Swieczkowski – Web Developer Portfolio",
     description:
-      "Explore Martin’s clean, modern dev work infused with personality and tactical flair.",
+      "Explore Marcin’s clean, modern dev work infused with personality and tactical flair.",
     url: "https://www.eidhaart.com",
-    siteName: "Martin.dev",
+    siteName: "Marcin.dev",
     images: [
       {
         url: "/images/eidhaart-red.png",
         width: 1042,
         height: 479,
-        alt: "Martin's Portfolio Preview",
+        alt: "Marcin's Portfolio Preview",
       },
     ],
     type: "website",

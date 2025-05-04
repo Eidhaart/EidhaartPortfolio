@@ -434,6 +434,10 @@ p {
   font-size: 0.9rem;
   flex: 1;
 }
+.footer-left i {
+  color: var(--color-accent-hover);
+  font-family: "AmazOOSTROVFine";
+}
 
 .footer-right {
   flex: 0 0 auto;

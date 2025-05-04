@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="footer-content">
         <div className="footer-left">
           <p>&copy; 2025 Marcin Świeczkowski | Built with Next.js</p>
-          <p>Designed with grimdark love.</p>
+          <i>Designed with grimdark love.</i>
         </div>
         <div className="footer-right">
           <img

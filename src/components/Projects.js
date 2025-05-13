@@ -1,10 +1,5 @@
 const projects = [
-  {
-    title: "Hycel.eu",
-    description:
-      "A service site for a professional animal rescue and transport company. Focused on clarity, trust, and accessibility—built with Next.js to present their services, contact info, and real-world field photos.",
-    link: "https://hycel.eu",
-  },
+  
   {
     title: "Horseback Stunt Shows",
     description:
@@ -16,6 +11,12 @@ const projects = [
     description:
       "Personal brand site for an artist, featuring a minimalist layout, art gallery, and biography. Built to be simple, elegant, and easy to update with new works.",
     link: "https://majawinnick.com",
+  },
+  {
+    title: "Hycel.eu",
+    description:
+      "A service site for a professional animal rescue and transport company. Focused on clarity, trust, and accessibility—built with Next.js to present their services, contact info, and real-world field photos.",
+    link: "https://hycel.eu",
   },
 ];
 

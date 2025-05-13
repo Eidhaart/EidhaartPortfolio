@@ -32,7 +32,7 @@ export default function Home() {
           </a>
           <div className="hero-links">
             <a
-              href="https://github.com/YOUR_USERNAME"
+              href="https://github.com/Eidhaart"
               target="_blank"
               rel="noopener noreferrer"
               className="btn"
@@ -40,7 +40,7 @@ export default function Home() {
               GitHub
             </a>
             <a
-              href="https://www.linkedin.com/in/YOUR_PROFILE"
+              href="https://www.linkedin.com/in/Eidhaart"
               target="_blank"
               rel="noopener noreferrer"
               className="btn"
